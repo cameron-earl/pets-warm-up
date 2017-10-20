@@ -12,10 +12,16 @@
       <fieldset>
         <legend>Add New Pet</legend>
         <input type="text" name="name" placeholder="Pet Name">
-        <input type="text" name="type">
-        <!-- <select name="type">
-          <option ></option>
-        </select> -->
+        <!-- <input type="text" name="type"> -->
+        <select name="type">
+          <option disabled selected hidden>Species</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="rabbit">Rabbit</option>
+          <option value="iguana">Iguana</option>
+          <option value="turtle">Turtle</option>
+          <option value="other">Other</option>
+        </select>
         <select type="text" name="gender">
           <option disabled selected hidden>Gender</option>
           <option value="male">Male</option>
