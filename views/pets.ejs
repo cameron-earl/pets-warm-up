@@ -6,6 +6,25 @@
   </head>
   <body>
     <h2>Pets Database</h2>
+
+
+    <form class="" action="/pets" method="post">
+      <fieldset>
+        <legend>Add New Pet</legend>
+        <input type="text" name="name" placeholder="Pet Name">
+        <input type="text" name="type">
+        <!-- <select name="type">
+          <option ></option>
+        </select> -->
+        <select type="text" name="gender">
+          <option disabled selected hidden>Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+
     <table>
       <thead>
         <tr>
@@ -17,12 +36,12 @@
       </thead>
       <tbody>
         <% for (let pet of pets) { %>
-          <tr>
-            <td><%= pet.id %></td>
-            <td><%= pet.name %></td>
-            <td><%= pet.type %></td>
-            <td><%= pet.gender %></td>
-          </tr>
+        <tr>
+          <td><%= pet.id %></td>
+          <td><%= pet.name %></td>
+          <td><%= pet.type %></td>
+          <td><%= pet.gender %></td>
+        </tr>
         <% } %>
       </tbody>
     </table>
