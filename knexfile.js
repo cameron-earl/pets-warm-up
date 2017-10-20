@@ -10,7 +10,7 @@ module.exports = {
         },
       seeds: {
           directory: __dirname + '/db/seeds',
-        },
+        }
     },
   production: {
       client: 'pg',
@@ -20,6 +20,6 @@ module.exports = {
         },
       seeds: {
           directory: __dirname + '/db/seeds/production',
-        },
-    },
+        }
+    }
 };
